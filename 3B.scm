@@ -31,13 +31,13 @@
 	; - I cannot break it up into more primitive pieces
 	; - It's not var
 	(AND
-		(ATOMIC? exp)
+		(ATOM? exp)
 		(NOT (EQ? exp var)))
 	)
 
 (define (same-var? exp var)
 	(AND
-		(ATOMIC? exp)
+		(ATOM? exp)
 		(EQ? exp var))
 	)
 
@@ -47,7 +47,7 @@
 (define (sum? exp)
 	; An expression is a sum if its first element equals '+
 	(AND
-		(NOT (ATOMIC? exp))
+		(NOT (ATOM? exp))
 		(EQ (CAR exp) '+)) ; Note the quotation.
 	)
 
@@ -56,7 +56,7 @@
 
 (define product?
 	(AND
-		(NOT (ATOMIC? exp))
+		(NOT (ATOM? exp))
 		(EQ? (CAR exp) '*))
 	) 
 
@@ -103,5 +103,5 @@
 			(= a1 0)
 			(= a2 0))
 			0)
-		(T (* a1 a2)) ; default to product
+		(ELSE (* a1 a2))
 	)
