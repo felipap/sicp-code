@@ -1,20 +1,16 @@
 ; SICP programs
 ; Lecture 3B
-
-; Using a calculus cheat sheet...
-; Writing some of the functions in uppercase might be against what is .. Confusion arising from naming primitives uppercase
-; I tried to use Sussman's original indentation...
-; In order of class' display
+; Lecturer: Hal Abelson
 
 (define (deriv exp var)
-	(COND
-		((const? exp var) 0)
-		((same-var? exp var) 1)
-		((sum? exp)
+	(cond)
+		((CONST? exp var) 0)
+		((SAME-VAR? exp var) 1)
+		((SUM? exp)
 			(make-sum
 				(deriv (A1 exp) var)
 				(deriv (A2 exp) var)))
-		((product? exp)
+		((PRODUCT? exp)
 			(make-sum
 				(make-product
 					(M1 exp)
@@ -26,7 +22,7 @@
 		)
 	)
 
-(define (const? exp var)
+(define (CONST? exp var)
 	; An expressin is constant if:
 	; - I cannot break it up into more primitive pieces
 	; - It's not var
@@ -35,7 +31,7 @@
 		(NOT (EQ? exp var)))
 	)
 
-(define (same-var? exp var)
+(define (SAME-VAR? exp var)
 	(AND
 		(ATOM? exp)
 		(EQ? exp var))
@@ -44,7 +40,7 @@
 ;#######
 ;#######
 
-(define (sum? exp)
+(define (SUM? exp)
 	; An expression is a sum if its first element equals '+
 	(AND
 		(NOT (ATOM? exp))
@@ -54,7 +50,7 @@
 (define (make-sum a1 a2)
 	(LIST '+ a1 a2))
 
-(define product?
+(define PRODUCT?
 	(AND
 		(NOT (ATOM? exp))
 		(EQ? (CAR exp) '*))
@@ -80,7 +76,7 @@
 ; Correction after 3B's first break
 ; Removing expressions which make-sum yields that return null
 (define (make-sum a1 a2)
-	(COND
+	(cond)
 		((AND
 			(NUMBER? a1)
 			(NUMBER? a2))
@@ -98,7 +94,7 @@
 ; Obs: my addition
 ; This would be the same thing, but this time applied to make-product
 (define (make-product a1 a2)
-	(COND
+	(cond)
 		((OR
 			(= a1 0)
 			(= a2 0))
