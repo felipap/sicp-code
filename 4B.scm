@@ -188,25 +188,25 @@
 
 ;# SLIDE 0:22:06
 ;;; GENERIC SELECTORS FOR COMPLEX numbers
-; ; Dispatch-type strategy ##
-; (define (REAL-PART z)
-; 	(cond ((rectangular? z) ...)
-; 		  (polar? z) ...))
+; Dispatch-type strategy ##
+(define (REAL-PART z)
+	(cond ((rectangular? z) ...)
+		  (polar? z) ...))
 
 
-; (define (IMAG-PART z)
-; 	(cond ((rectangular? z) ...)
-; 		  (polar? z) ...))
+(define (IMAG-PART z)
+	(cond ((rectangular? z) ...)
+		  (polar? z) ...))
 
 
-; (define (MAGNITUDE z)
-; 	(cond ((rectangular? z) ...)
-; 		  (polar? z) ...))
+(define (MAGNITUDE z)
+	(cond ((rectangular? z) ...)
+		  (polar? z) ...))
 
 
-; (define (ANGLE z)
-; 	(cond ((rectangular? z) ...)
-; 		  (polar? z) ...))
+(define (ANGLE z)
+	(cond ((rectangular? z) ...)
+		  (polar? z) ...))
 ;# END SLIDE
 
 
@@ -251,8 +251,8 @@
 
 ;# BOARD 0:32:00
 ; table API:
-; (PUT KEY 1 KEY2 VALUE)
-; (GET KEY1 KEY2)
+(PUT KEY 1 KEY2 VALUE)
+(GET KEY1 KEY2)
 ;# END BOARD
 
 
@@ -260,31 +260,31 @@
 ;# SLIDE 0:33:02
 ;;; Installing the rectangular
 ; ;;; operations in the table ##
-; (put 'rectangular  'real-part
-; 	real-part-rectangular)
+(put 'rectangular  'real-part
+	real-part-rectangular)
 
-; (put 'rectangular 'imag-part
-; 	imag-part-rectangular)
+(put 'rectangular 'imag-part
+	imag-part-rectangular)
 
-; (put 'rectangular 'magnitude
-; 	magnitude-part-rectangular)
+(put 'rectangular 'magnitude
+	magnitude-part-rectangular)
 
-; (put 'rectangular 'angle
-; 	angle-rectangular)
+(put 'rectangular 'angle
+	angle-rectangular)
 ;# END SLIDE
 
 
 
 ;# SLIDE 0:33:54
 ;;; Installing the polar
-; ;;; operations in the table ###
-; (put 'polar  'real-part real-part-polar)
+;;; operations in the table ###
+(put 'polar  'real-part real-part-polar)
 
-; (put 'polar 'imag-part imag-part-polar)
+(put 'polar 'imag-part imag-part-polar)
 
-; (put 'polar 'magnitude magnitude-part-polar)
+(put 'polar 'magnitude magnitude-part-polar)
 
-; (put 'polar 'angle angle-polar)
+(put 'polar 'angle angle-polar)
 ;# END SLIDE
 
 
@@ -302,7 +302,6 @@
 
 ;# SLIDE 0:36:48
 ;;; Defining the selectors using operate; Data-directed programming 
-
 (define (real-part obj)
 	(operate 'real-part obj))
 
@@ -331,14 +330,14 @@
 			(* (denom x) (numer y)))
 		(* (denom x) (denom y))))
 
-; (define (-rat x y) ; ...
-; 	)
+(define (-rat x y) ; ...
+	)
 
-; (define (*rat x y) ; ...
-; 	)
+(define (*rat x y) ; ...
+	)
 
-; (define (/rat x y) ; ...
-; 	)
+(define (/rat x y) ; ...
+	)
 ;# END SLIDE
 
 
@@ -349,10 +348,10 @@
 (define (make-rat x y)
 	(attach-type 'rational (cons x y)))
 
-; (put 'rational 'add +rat)
-; (put 'rational 'sub -rat)
-; (put 'rational 'mul *rat)
-; (put 'rational 'div /rat)
+(put 'rational 'add +rat)
+(put 'rational 'sub -rat)
+(put 'rational 'mul *rat)
+(put 'rational 'div /rat)
 ;# END SLIDE
 
 
@@ -450,8 +449,8 @@
 							(make-term
 								(order t1)
 								(ADD (coeff t1) (coeff t2)))
+							; Notice the generic ADD, to sum coeffs of any kind
 							(+terms (rest-terms L1) (rest-terms L2)))
-						; Notice the generic ADD, to add any type of coefficient
 						;# END
 					))
 				))))

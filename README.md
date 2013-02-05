@@ -17,6 +17,8 @@ ToDo
 ; In order of class' display (some of it)
 using youtube versions!
 
+some of it might not compile directly, because of the notation used in the slides
+
 http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/lecture-notes/
 http://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/
 http://mitpress.mit.edu/sicp/
