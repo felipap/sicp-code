@@ -7,6 +7,8 @@ Code in SCIP lectures
 The youtube classes from 1986 are available in 240p/360p, very poor quality for visualizing code.
 What I've done is 
 
+Objective is make code easier to visualize and manipulate (as in case of copying what's written on the board).
+
 maintain consistency in notation, comments, indentation etc
 
 ToDo
@@ -25,3 +27,7 @@ http://mitpress.mit.edu/sicp/
 
 TRANSCRIPTS
 http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video-lectures/4b-generic-operators/
+
+http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video-lectures/
+
+http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/lecture-notes/lecture1webhand.pdf
