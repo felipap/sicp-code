@@ -1,4 +1,4 @@
-; Lecture: 5A
+; Lecture: 6A
 ; Lecturer: Hal Abelson
 
 
@@ -198,7 +198,6 @@ for any x, y
 
 
 
-
 ;# SLIDE 0:40:47
 (define (queens size)
 	(define (fill-cols k)
@@ -215,6 +214,8 @@ for any x, y
 	(fill-cools size))
 ;# END SLIDE
 
+
+
 ;# BOARD 0:51:10
 (cons-stream x y)
 abbreviation for (cons x (delay y))
@@ -223,14 +224,21 @@ abbreviation for (cons x (delay y))
 (tail s) → (force (cdr s))
 ;# END BOARD
 
+
+
 ;# BOARD 0:58:40
 (delay <exp>)
 abbrev for (memo-proc (λ()<exp>))
 
 (force p) = (p)
+; (tail p) = (force (cdr p)) = ((cdr p))
+; Keep in mind that p, in that case, is always a procedure returning a stream 
 ;# END BOARD
 
+
+
 ;# SLIDE 1:00:10
+; Memoization process
 (define (memo-proc proc)
 	(let
 		((already-run? nil) (result nil))

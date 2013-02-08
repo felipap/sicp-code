@@ -188,7 +188,7 @@ environment of evaluation.
 
 
 
-;# 45:50 Sussman, why you talking like that? Sussman, STAHP!
+;# 45:50 Sussman scaring a student.
 
 
 
@@ -213,7 +213,6 @@ environment of evaluation.
 
 ;# 1:01:00 When Sussman takes out his knife and cuts off his fingernail, just to
 ;# make a point. Genius.
-
 
 
 

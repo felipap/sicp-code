@@ -3,8 +3,8 @@
 
 
 ;# SLIDE 0:07:04
-; ;; Arithmetic operations on
-; ;; complex numbers ##
+;;; Arithmetic operations on
+;;; complex numbers 
 (define (+c z1 z2) ...)
 (define (-c z1 z2) ...)
 (define (*c z1 z2) ...)
@@ -14,12 +14,12 @@
 
 
 ;# SLIDE 0:08:57
-; SELECTORS
+SELECTORS
 (REAL-PART Z)
 (IMAG-PART Z)
 (MAGNITUDE Z)
 (ANGLE Z)
-; CONSTRUCTORS
+CONSTRUCTORS
 (MAKE-RECTANGULAR X Y)
 (MAKE-POLAR B A)
 ;# END SLIDE
@@ -188,7 +188,7 @@
 
 ;# SLIDE 0:22:06
 ;;; GENERIC SELECTORS FOR COMPLEX numbers
-; Dispatch-type strategy ##
+Dispatch-type strategy
 (define (REAL-PART z)
 	(cond ((rectangular? z) ...)
 		  (polar? z) ...))
@@ -250,7 +250,7 @@
 
 
 ;# BOARD 0:32:00
-; table API:
+; table API
 (PUT KEY 1 KEY2 VALUE)
 (GET KEY1 KEY2)
 ;# END BOARD
@@ -259,7 +259,7 @@
 
 ;# SLIDE 0:33:02
 ;;; Installing the rectangular
-; ;;; operations in the table ##
+;;; operations in the table ##
 (put 'rectangular  'real-part
 	real-part-rectangular)
 
@@ -379,8 +379,8 @@
 (define (+complex z1 z2)
 	(make-complex (+c z1 z2)))
 
-; (put 'complex 'add +complex)
-; similarly for -complex *complex /complex
+(put 'complex 'add +complex)
+similarly for -complex *complex /complex
 ;# END SLIDE
 
 
@@ -393,14 +393,14 @@
 (define (+number z1 z2)
 	(make-number (+ z1 z2)))
 
-; (put 'number 'add +number)
-; similarly for -number *number /number
+(put 'number 'add +number)
+similarly for -number *number /number
 ;# END SLIDE
 
 
 
 ;# SLIDE 0:59:59
-; Installing polynomials
+Installing polynomials
 (define (make-polynomial var term-list)
 	(attach-type 'polynomial
 		(cons var term-list)))
@@ -412,7 +412,7 @@
 			(+terms (term-list p1) (term-list p2)))
 		(error "Polys not in same var")))
 
-; (put 'polynomial 'add +poly)
+(put 'polynomial 'add +poly)
 ;# END SLIDE
 
 

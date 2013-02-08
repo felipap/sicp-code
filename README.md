@@ -1,5 +1,5 @@
 
-Code in SCIP lectures
+Code in 1986 SICP lectures
 =====================
 
 ## From MIT's 6.001, Structure and Interpretation of Computer Programs.
@@ -11,11 +11,18 @@ Objective is make code easier to visualize and manipulate (as in case of copying
 
 maintain consistency in notation, comments, indentation etc
 
+explain terminal syntax, comments notation, etc
+=>
+$
+...
+
+
+There are probably a few syntax errors deriving from the misplacement of parenthesis.
 ToDo
 - Syntax normalizer
 
 ; Writing some of the functions in uppercase might be against what is .. Confusion arising from naming primitives uppercase
-; I tried to use Sussman's original indentation... no i didnt
+; I mostly used the original indentation, except when I was able to improve readability by changing it.
 ; In order of class' display (some of it)
 using youtube versions!
 
@@ -31,3 +38,4 @@ http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-str
 http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video-lectures/
 
 http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/lecture-notes/lecture1webhand.pdf
+

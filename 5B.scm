@@ -1,4 +1,4 @@
-; Lecture: 5A
+; Lecture: 5B
 ; Lecturer: Gerald Jay Sussman
 
 
