@@ -9,7 +9,7 @@ Code in 1986 SICP lectures
 The [youtube classes from 1986](https://www.youtube.com/course?list=ECE18841CABEA24090) are available in 240p/360p, very poor quality for visualizing anything, let alone code. In addition to that, the camera wouldn't in fix the code for long, making it substantially harder to follow.
 
 <h4><strong>
-	Using the youtube version (and timing), I have transcribed the code from the board and slide present in ALL classes to text format and published it here.
+	Using the youtube playlist (and timing), I have transcribed the code from the board and slide present in ALL classes to text format and published it here.
 </strong></h4>
 
 ### My objective with this project was to
