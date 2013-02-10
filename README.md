@@ -1,6 +1,6 @@
 
-Code in 1986 SICP lectures λ
-============================
+Code in 1986 SICP lectures
+==========================
 
 ## From MIT's 6.001, taught by Gerry Sussman and Hal Abelson.
 
