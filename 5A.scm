@@ -211,7 +211,7 @@ environment of evaluation.
 
 
 
-;# 1:01:00 When Sussman takes out his knife and cuts off his fingernail, just to
+;# 1:01:00 When GJS takes out his knife and cuts off his fingernail, just to
 ;# make a point. Genius.
 
 

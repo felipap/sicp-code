@@ -1,8 +1,13 @@
 
 Code in 1986 SICP lectures
-=====================
+==========================
 
 ## From MIT's 6.001, Structure and Interpretation of Computer Programs.
+
+λ
+→
+
+## Purpose
 
 The youtube classes from 1986 are available in 240p/360p, very poor quality for visualizing code.
 What I've done is 
@@ -11,22 +16,38 @@ Objective is make code easier to visualize and manipulate (as in case of copying
 
 maintain consistency in notation, comments, indentation etc
 
+some of it won't compile directly, because of the notation used in the slides, the extensions are all still .scm, though.
+
+## Syntax and notation
+
+I essentially used the original indentation of the slides, except for when I was able to improve readability by changing it.
 explain terminal syntax, comments notation, etc
 =>
 $
 ...
 
 
+## Notes
+
+I have fixed the code on a few rare occasions.
+-	During lecture [7A]() (the most epic lecture of all), [33:45](http://youtu.be/0m6hoOelZH8?t=33m45s), <strike>in the code for `assaq`, `car` should be changed to `caar`.<strike>
+	I didn't notice Sussman correcting it after showing the code. Geez.
+	I spotted the mistake while creating my version of the code and seeing that it didn't match the slides by that much. I recommend this practice of trying to write some of the functions beforehand.
+
+I have added comments and notes throughout the code to help comprehension and attention to details.
+
+## Please, help!
+
 There are probably a few syntax errors deriving from the misplacement of parenthesis.
 ToDo
 - Syntax normalizer
 
 ; Writing some of the functions in uppercase might be against what is .. Confusion arising from naming primitives uppercase
-; I mostly used the original indentation, except when I was able to improve readability by changing it.
 ; In order of class' display (some of it)
-using youtube versions!
+using youtube version and timing (videos can also be found [here](...))!
 
-some of it might not compile directly, because of the notation used in the slides
+
+## Useful Links
 
 http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/lecture-notes/
 http://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/
@@ -38,4 +59,3 @@ http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-str
 http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video-lectures/
 
 http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/lecture-notes/lecture1webhand.pdf
-
