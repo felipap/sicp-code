@@ -281,6 +281,8 @@
 ; Sussman: "The key to a very good programming and a very good design is to know
 ; what not to think about." #wisdom
 
+
+
 ;# SLIDE 1:00:05
 ; Dictionary interfaces
 ; The usage of let is explained in section 1.3.2 of SICP (book) 
