@@ -6,22 +6,25 @@ Code in 1986 SICP lectures
 
 ## Purpose
 
-The [youtube classes from 1986](https://www.youtube.com/course?list=ECE18841CABEA24090) are available in 240p/360p, very poor quality for visualizing anything, much code. In addition to that, the camera won't fix the code for long, making it substantially harder to follow
+The [youtube classes from 1986](https://www.youtube.com/course?list=ECE18841CABEA24090) are available in 240p/360p, very poor quality for visualizing anything, let alone code. In addition to that, the camera wouldn't in fix the code for long, making it substantially harder to follow.
 
-using youtube version and timing (videos can also be found [here](...))!
-In order of class' display (some of it)
+### Using the youtube version (and timing), I have transcribed the code from the board and slide present in ALL classes to text format and published it here.
 
-#### My objective with this project was to
+### My objective with this project was to
 -	make slides easier to visualize
--	and code easy to manipulate (as in case of copying what's written on the board)
+-	make code easy to manipulate (no need to write transcribe what's seen in the video)
 
 
 Syntax and Notation
 -------------------
 
-maintain consistency in notation, comments, indentation etc
-I essentially used the original indentation of the slides, except for when I was able to improve readability by changing it.
-explain terminal syntax, comments notation, etc
+I tried to maintain consistency in notation, comments, indentation throughout the lectures, couldn't achieve that 100%. I essentially used the original indentation on the slides, except for when I was able to improve readability by changing it.
+
+Every SLIDE, TERMINAL or BOARD content is presented contained the time of first display, in the following manner
+	
+	;# SLIDE 0:00:00
+	...
+	;# END SLIDE
 
 Breaks and interruptions are also indicated.
 
@@ -33,11 +36,13 @@ $
 Notes and Observations
 ----------------------
 
+Comments by me were also added to help comprehension and attention to details
+
 Though the files have extension .scm, they present code from the board and literal content of the slides (some of which is code). They're expected not to compile in any scheme interpreter.
 
 There are probably a few syntax errors deriving from the misplacement of parenthesis and mistyping of words.
 
-I have added comments and notes throughout the code to help comprehension and attention to details.
+I have added comments and notes throughout the code to 
 
 The syntax and style are not consistent in all of the code, and I apologize for that. I believe to have refined the styling during the process of transcribing.
 
