@@ -26,7 +26,7 @@
 				((eq? (car exp) 'QUOTE)				; = literal constant
 					(CADR exp))
 				((eq? (car exp) 'LAMBDA)			; = lambda expression
-					(list 'CLOJURE (cdr exp) env))
+					(list 'CLOSURE (cdr exp) env))
 				((eq? (car exp) 'COND)				; = condition
 					(evcond (cdr exp) env))
 				(else								; = (<op> <arg1> <arg2> ...)
@@ -43,7 +43,7 @@
 	(λ (proc args)
 		(cond 	((primitive? proc)							; Primitive
 					(apply-primod proc args)) ; where the magic happen s
-				((eq? (car proc) 'CLOJURE)					; Lambda expression
+				((eq? (car proc) 'CLOSURE)					; Lambda expression
 					(eval	(cadadr proc) ; evaluate the body
 							(bind ; make new environment
 								(cadadr proc) ; parameter names
@@ -173,7 +173,7 @@
 				'(3))
 		'(4))
 
-(apply 	(apply 	'(CLOJURE ((x)(λ(y) (+ x y)))	<e0>)
+(apply 	(apply 	'(CLOSURE ((x)(λ(y) (+ x y)))	<e0>)
 				'(3))
 		'(4))
 
@@ -184,7 +184,7 @@
 
 
 ;# BOARD 0:48:35
-(apply 	'(CLOJURE ((y) (+ x y)) <e1>)
+(apply 	'(CLOSURE ((y) (+ x y)) <e1>)
 		'(4))
 
 (eval 	'(+ x y) <e2>)
