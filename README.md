@@ -2,13 +2,15 @@
 Code in 1986 SICP lectures
 ==========================
 
-## From MIT's 6.001, taught by Gerry Sussman and Hal Abelson.
+## From MIT's 6.001, by Gerry Sussman and Hal Abelson.
 
 ## Purpose
 
 The [youtube classes from 1986](https://www.youtube.com/course?list=ECE18841CABEA24090) are available in 240p/360p, very poor quality for visualizing anything, let alone code. In addition to that, the camera wouldn't in fix the code for long, making it substantially harder to follow.
 
-**### Using the youtube version (and timing), I have transcribed the code from the board and slide present in ALL classes to text format and published it here. ###**
+<h4><strong>
+	Using the youtube version (and timing), I have transcribed the code from the board and slide present in ALL classes to text format and published it here.
+</strong></h4>
 
 ### My objective with this project was to
 -	make slides easier to visualize
@@ -20,13 +22,13 @@ Syntax and Notation
 
 I tried to maintain consistency in notation, comments, indentation throughout the lectures, couldn't achieve that 100%. I essentially used the original indentation on the slides, except for when I was able to improve readability by changing it.
 
-Every SLIDE, TERMINAL or BOARD content is presented contained the time of first display, in the following manner
+Every `SLIDE`, `TERMINAL` or `BOARD` content is presented, together with the time of first appearance, in the following manner
 	
 	;# SLIDE 0:00:00
 	...
 	;# END SLIDE
 
-Breaks and interruptions are also indicated.
+#### Breaks and interruptions are also indicated.
 
 =>
 $
