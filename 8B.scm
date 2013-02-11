@@ -1,5 +1,5 @@
 ; Lecture: 8B
-; Lecturer: Gerald Jay Sussman
+; Lecturer: Hal Abelson
 
 λ
 →
