@@ -1,4 +1,4 @@
-; Lecture: 8A
+; Lecture: 8B
 ; Lecturer: Gerald Jay Sussman
 
 λ
