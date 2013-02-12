@@ -41,7 +41,7 @@ with 	((a ?y c) (a b ?z))
 	?x : (a b c)
 	?y : b
 	?z : c
-;# END BOARD
+;# END SLIDE
 
 
 
@@ -53,7 +53,7 @@ with 	((?y a ?w) (b ?v ?z))
 	?v : a
 	?w : ?z
 	?x : (b a ?w)
-;# END BOARD
+;# END SLIDE
 
 
 
@@ -89,7 +89,7 @@ procedure parameters to the arguments.
 
 (define (sum-squares x y)
 	(+ (square x) (square y)))
-;# END BOARD
+;# END SLIDE
 
 
 
