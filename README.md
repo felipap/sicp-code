@@ -16,6 +16,7 @@ The [youtube classes from 1986](https://www.youtube.com/course?list=ECE18841CABE
 -	**make slides easier to visualize**
 -	**make code easy to manipulate (no need to write transcribe what's seen in the video)**
 
+![Image](http://i.imgur.com/nin0M9n.png)
 
 Syntax and Notation
 -------------------
