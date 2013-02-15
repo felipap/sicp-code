@@ -2,7 +2,8 @@
 Code in 1986 SICP lectures
 ==========================
 
-## From MIT's 6.001, by Gerry Sussman and Hal Abelson.
+# From the MIT class by Gerry Sussman and Hal Abelson
+
 
 ## Purpose
 
