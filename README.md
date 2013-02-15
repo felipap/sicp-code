@@ -33,13 +33,19 @@ Every `SLIDE`, `TERMINAL` or `BOARD` content is presented, together with the tim
 
 =>
 $
+
 ...
 
 
 Notes and Observations
 ----------------------
 
-Comments by me were also added to help comprehension and attention to details
+Comments by me were also added to help comprehension and attention to details.
+
+**Some slides were omitted, sometimes because of the following:
+-	either because it was extremely readable
+- 	it's not code
+-	or its contents isn't "textable".**
 
 Though the files have extension .scm, they present code from the board and literal content of the slides (some of which is code). They're expected not to compile in any scheme interpreter.
 

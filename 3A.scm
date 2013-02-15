@@ -1,0 +1,88 @@
+; Lecture: 2B
+; Lecturer: Harold Abelson
+
+
+
+;# SLIDE 1:00:00
+;# END SLIDE
+
+
+
+;# BOARD 1:00:00
+;# END BOARD
+
+
+
+;# SLIDE 1:00:00
+;# END SLIDE
+
+
+
+;# SLIDE 1:00:00
+;# END SLIDE
+
+
+
+;# SLIDE 1:00:00
+;# END SLIDE
+
+
+
+;# BOARD 1:00:00
+;# END BOARD
+
+
+
+;# SLIDE 1:00:00
+;# END SLIDE
+
+
+
+;# SLIDE 1:00:00
+;# END SLIDE
+
+
+
+;# SLIDE 1:00:00
+;# END SLIDE
+
+
+
+;# BOARD 1:00:00
+;# END BOARD
+
+
+
+;# SLIDE 1:00:00
+;# END SLIDE
+
+
+
+;# SLIDE 1:00:00
+;# END SLIDE
+
+
+
+;# SLIDE 1:00:00
+;# END SLIDE
+
+
+
+;# BOARD 1:00:00
+;# END BOARD
+
+
+
+;# SLIDE 1:00:00
+;# END SLIDE
+
+
+
+;# SLIDE 1:00:00
+;# END SLIDE
+
+
+
+;;;
+;;; BREAK 0:20:05
+;;;

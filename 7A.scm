@@ -2,7 +2,6 @@
 ; Lecturer: Gerald Jay Sussman
 
 
-
 ;# SLIDE 0:00:39
 (define (fact n)
 	(cond	((= n 0) 1
