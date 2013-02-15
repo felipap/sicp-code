@@ -1,5 +1,5 @@
 ; Lecture: 10A
-; Lecturer: Hal Abelson
+; Lecturer: Harold Abelson
 
 
 ;# SLIDE 0:08:20
@@ -27,7 +27,9 @@ Register operations in interpreting (F X)
 
 ;# BOARD 0:09:35  
 (if P A B)
+
 ----------
+
 <code for P - result in VAL>
 BRANCH if VAL is TRUE to LABEL1
 <code for B>

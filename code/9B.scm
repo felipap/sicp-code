@@ -1,6 +1,5 @@
 ; Lecture: 9B
-; Lecturer: Hal Abelson (Sussman as Execution Unit)
-
+; Lecturer: Harold Abelson feat. Sussman as Execution Unit
 
 
 ;# SLIDE 0:05:45

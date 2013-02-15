@@ -1,5 +1,5 @@
 ; Lecture: 4B
-; Lecturer: Hal Abelson
+; Lecturer: Harold Abelson
 
 
 ;# SLIDE 0:07:04

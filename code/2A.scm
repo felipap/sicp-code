@@ -2,7 +2,6 @@
 ; Lecturer: Gerald Jay Sussman
 
 
-
 ;# BOARD 0:01:55
 (define (sum-int a b)
 	(if (> a b)
@@ -190,8 +189,8 @@ Iterative
 
 ;# BOARD 0:51:15
 (define deriv
-	(λ(f)
-		(λ(x)
+	(λ (f)
+		(λ (x)
 			(/ (- (f (+ x dx))
 				  (f x))
 			dx))))

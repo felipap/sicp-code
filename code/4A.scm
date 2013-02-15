@@ -1,5 +1,6 @@
-; Lecture 4A
+; Lecture: 4A
 ; Lecturer: Gerald Jay Sussman
+
 
 ;# SLIDE 0:05:26
 (define deriv-rules
@@ -38,21 +39,21 @@
 
 
 ;# BOARD 0:08:00
-; Pattern match
-; foo		- matches exactly foo
-; (f a b)	- matches list in which first element if f, second is a, third is b
-; (? x)		- matches anything, call it x
-; (?c x)	- matches constant, call it x
-; (?v x)	- matches variable, call it x
+Pattern match
+foo		- matches exactly foo
+(f a b)	- matches list in which first element if f, second is a, third is b
+(? x)		- matches anything, call it x
+(?c x)	- matches constant, call it x
+(?v x)	- matches variable, call it x
 ;# END BOARD
 
 
 
 ;# BOARD 0:10:30
-; Skeletons
-; foo			- instantiates itself
-; (f a b)		- instantiates to a 3-list => results of initializing f, a, b
-; (: x)		- initialize to the value of x in the matched pattern
+Skeletons
+foo			- instantiates itself
+(f a b)		- instantiates to a 3-list => results of initializing f, a, b
+(: x)		- initialize to the value of x in the matched pattern
 ;# END BOARD
 
 
@@ -140,7 +141,7 @@
 
 ;# SLIDE 0:26:22
 ; Code as seen on slide
-; Please refer to SICP (book) for a similar code (4.4.4.3)
+; Refer to SICP (book) for a similar code (4.4.4.3)
 (define (match pat exp dict) ; returns a dictionary
 	(cond
 		((EQ? dict 'failed) ; Propagate failure

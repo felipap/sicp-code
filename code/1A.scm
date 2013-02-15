@@ -2,7 +2,6 @@
 ; Lecturer: Harold Abelson
 
 
-
 ;# SLIDE 0:04:10
 Declarative Knowledge
 "WHAT IS TRUE"

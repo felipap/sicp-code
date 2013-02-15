@@ -1,5 +1,5 @@
 ; Lecture: 6A
-; Lecturer: Hal Abelson
+; Lecturer: Harold Abelson
 
 
 ;# SLIDE 0:09:20

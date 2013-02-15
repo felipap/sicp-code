@@ -1,5 +1,6 @@
  (load-option 'format)
 
+
 (define (TRY guess x)
 ;	(display (format "~F ~%" guess))
 	(display guess)

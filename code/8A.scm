@@ -1,5 +1,5 @@
 ; Lecture: 8A
-; Lecturer: Hal Abelson
+; Lecturer: Harold Abelson
 
 
 ;# SLIDE 0:05:00

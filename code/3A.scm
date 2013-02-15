@@ -2,7 +2,6 @@
 ; Lecturer: Harold Abelson
 
 
-
 ;# SLIDE 0:01:25
 (define (+vect v1 v2)
 	(make-vector

@@ -1,9 +1,21 @@
-; SICP programs
-; Lecture 3B
-; Lecturer: Hal Abelson
+; Lecture: 3B
+; Lecturer: Gerald Jay Sussman
 
+
+;# SLIDE 0:01:55
+(define deriv
+	(lambda (f)
+		(lambda (x)
+			(/ (- (f (+ x dx))
+				  (f x))
+			dx))))
+;# END SLIDE
+
+
+
+;# BOARD 0:07:10
 (define (deriv exp var)
-	(cond)
+	(cond
 		((CONST? exp var) 0)
 		((SAME-VAR? exp var) 1)
 		((SUM? exp)
@@ -21,7 +33,11 @@
 		; ... more rules
 		)
 	)
+;# END BOARD
 
+
+
+;# BOARD 0:14:50
 (define (CONST? exp var)
 	; An expressin is constant if:
 	; - I cannot break it up into more primitive pieces
@@ -36,30 +52,34 @@
 		(ATOM? exp)
 		(EQ? exp var))
 	)
+;# END BOARD
 
-;#######
-;#######
 
+
+;# BOARD 0:17:35
 (define (SUM? exp)
 	; An expression is a sum if its first element equals '+
 	(AND
 		(NOT (ATOM? exp))
-		(EQ (CAR exp) '+)) ; Note the quotation.
+		(EQ (CAR exp) '+)) ; Notice the quotation.
 	)
 
 (define (make-sum a1 a2)
 	(LIST '+ a1 a2))
 
-(define PRODUCT?
+(define a1 cadr)
+;# END BOARD
+
+
+
+;# BOARD 0:24:40
+(define (PRODUCT? exp)
 	(AND
 		(NOT (ATOM? exp))
-		(EQ? (CAR exp) '*))
-	) 
+		(EQ? (CAR exp) '*)))
 
 (define (make-product m1 m2)
 	(LIST '* m1 m2))
-
-;#######
 
 ; CADR is the CAR of the CDR (second element of exp)
 ; CADDR is the CAR of the CDR of the CDR (third element of exp)
@@ -68,12 +88,55 @@
 (define A2 CADDR)
 
 (define M1 CADR) 	
-(define M2 CADDR) 	
+(define M2 CADDR)
+;# END BOARD
 
-;#######
-;#######
 
-; Correction after 3B's first break
+
+;# SLIDE 0:26:15
+(define foo					; a*x*x + b*x + c
+	'(+	(* a (+ x x))
+		(+ (* b x)
+			c)))
+
+]=> (deriv foo 'x)			; 2*a*x + b
+(+ 	(+ 	(* A (+ (* X 1) (* 1 X)))
+		(* 0 (* X X)))
+	(+ 	(+ (+ B 1) (* 0 X))
+		0))
+;# END SLIDE
+
+
+
+;;;
+;;; BREAK 0:28:50
+;;;
+
+
+
+;# SLIDE 0:32:23
+]=> (deriv foo 'a)			; x*x
+(+ 	(+ 	(* A (+ (* X 0) (* 0 X)))
+		(* 1 (* X X)))
+	(+ 	(+ (+ B 1) (* 0 X))
+		0))
+
+]=> (deriv foo 'b)			;  x
+(+ 	(+ 	(* A (+ (* X 0) (* 0 X)))
+		(* 0 (* X X)))
+	(+ 	(+ (+ B 0) (* 1 X))
+		0))
+
+]=> (deriv foo 'c)			; 1
+(+ 	(+ 	(* A (+ (* X 0) (* 0 X)))
+		(* 0 (* X X)))
+	(+ 	(+ (+ B 0) (* 0 X))
+		1))
+;# END SLIDE
+
+
+
+;# BOARD 0:37:30
 ; Removing expressions which make-sum yields that return null
 (define (make-sum a1 a2)
 	(cond)
@@ -90,8 +153,11 @@
 			(NUMBER? a2))
 			a2))
 	)
+;# END BOARD
 
-; Obs: my addition
+
+
+; EDITOR ADDITION :P
 ; This would be the same thing, but this time applied to make-product
 (define (make-product a1 a2)
 	(cond)
@@ -101,3 +167,19 @@
 			0)
 		(ELSE (* a1 a2))
 	)
+
+
+
+;# SLIDE 0:40:20
+]=> (deriv foo 'x)
+(+ (* A (+ X X)) B)
+
+]=> (deriv foo 'a)
+(* x x)
+
+]=> (deriv foo 'b)
+x
+
+]=> (deriv foo 'c)
+1
+;# END SLIDE

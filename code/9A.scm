@@ -1,6 +1,5 @@
 ; Lecture: 9A
-; Lecturer: Hal Abelson
-
+; Lecturer: Harold Abelson
 
 
 ;# BOARD 0:03:00

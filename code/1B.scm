@@ -2,7 +2,6 @@
 ; Lecturer: Gerald Jay Sussman
 
 
-
 ;# BOARD 0:01:30
 (define (sos x y)
 	(+ (sq x) (sq y)))
