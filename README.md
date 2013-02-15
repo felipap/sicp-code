@@ -34,7 +34,7 @@ Every `SLIDE`, `TERMINAL` or `BOARD` content is presented, together with the tim
 * I have fixed the code on a few, rare occasions. In all of them I've noted the correction using a colon followed by an exclamation mark. Notice that ';!' was also used, one or twice, in the lecture slides.
 
 #### A slide might have been ommited because
--  it's extremely readable
+-  it's clearly readable
 -  it's not code
 -  its content isn't "textable"
 
