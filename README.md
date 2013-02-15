@@ -1,77 +1,57 @@
 # Code in the 1986's MIT SICP lectures
 # Lectures by Gerry Sussman and Hal Abelson
 
-------------
+-------------------------------------------------------------------------
 
-## Purpose
+## Purpose and Motivation
 
-The [youtube classes from 1986](https://www.youtube.com/course?list=ECE18841CABEA24090) are available in 240p/360p, very poor quality for visualizing anything, let alone code. In addition to that, the camera wouldn't in fix the code for long, making it substantially harder to follow.
+MIT lectures on **Structure and Interpretation of Computer Programs**, as taught in 1986 by [Gerald Sussman](http://groups.csail.mit.edu/mac/users/gjs/) and [Harold Abelson](http://groups.csail.mit.edu/mac/users/hal/hal.html), are available online in [youtube](https://www.youtube.com/course?list=ECE18841CABEA24090) and [MIT OCW's website](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video-lectures/). The videos are available in 240p/360p: very poor quality for visualizing the code in the slides. In addition to that, the camera won't fixate on the board for long, making it extremely difficult to follow. 
 
-<h3><strong>
-	Using the youtube playlist (and timing), I have transcribed the code from the board and slide present in ALL classes to text format and published it here.
-</strong></h3>
+### This is a transcribed version of the full code featured in the lectures. ###
 
-#### My objective with this project was to
--	**make slides easier to visualize**
--	**make code easy to manipulate (no need to write transcribe what's seen in the video)**
+This project is intended to make the code and content in the lectures manipulable and readable, **unlike the slide below**:
 
-![Image](http://i.imgur.com/nin0M9n.png)
+![Unreadable Slide](http://i.imgur.com/nin0M9n.png "This is nearly impossible to read")
 
-Syntax and Notation
--------------------
+-------------------------------------------------------------------------
 
-I tried to maintain consistency in notation, comments, indentation throughout the lectures, couldn't achieve that 100%. I essentially used the original indentation on the slides, except for when I was able to improve readability by changing it.
+## Files Syntax and Notation
 
-Every `SLIDE`, `TERMINAL` or `BOARD` content is presented, together with the time of first appearance, in the following manner
+I tried to maintain consistency of notation, comments and indentation throughout the lectures. Much of the original indentation on the slides was maintained, except for when I was able to improve readability by changing it. Lecture breaks are also noted.
+
+Every `SLIDE`, `TERMINAL` or `BOARD` content is presented, together with the time appearance. E.g.
 	
 	;# SLIDE 0:00:00
-	...
+	    ... slide content
 	;# END SLIDE
 
-#### Breaks and interruptions are also indicated.
+-------------------------------------------------------------------------
 
-=>
-$
+## Notes and Observations
 
-...
+* I have added comments and remarks throughout the code to help comprehension.
+* Though all files have extension .scm, their content represent a literal transcription of the slides, some of which isn't code. **They're expected to fail to compile in all Scheme interpreters.**
+* I have fixed the code on a few, rare occasions. In all of them I've noted the correction using a colon followed by an exclamation mark. Notice that ';!' was also used, one or twice, in the lecture slides.
 
+#### A slide might have been ommited because
+-  it's extremely readable
+-  it's not code
+-  its content isn't "textable"
 
-Notes and Observations
-----------------------
-
-Comments by me were also added to help comprehension and attention to details.
-
-**Some slides were omitted, sometimes because of the following:
--	either because it was extremely readable
-- 	it's not code
--	or its contents isn't "textable".**
-
-Though the files have extension .scm, they present code from the board and literal content of the slides (some of which is code). They're expected not to compile in any scheme interpreter.
-
-There are probably a few syntax errors deriving from the misplacement of parenthesis and mistyping of words.
-
-I have added comments and notes throughout the code to 
-
-The syntax and style are not consistent in all of the code, and I apologize for that. I believe to have refined the styling during the process of transcribing.
-
-I have fixed the code on a few rare occasions. In all of them I've noted the correction using a colon followed by an exclamation mark. Notice that ';!' was also used, one or twice, in the lecture slides.
-
--	During lecture [7A]() (the most epic lecture of all), [33:45](http://youtu.be/0m6hoOelZH8?t=33m45s), <strike>in the code for `assaq`, `car` should be changed to `caar`.<strike>
-	I didn't notice Sussman correcting it after showing the code. Geez.
-	I spotted the mistake while creating my version of the code and seeing that it didn't match the slides by that much. I recommend this practice of trying to write some of the functions beforehand.
-
+-------------------------------------------------------------------------
 
 Help is much appreciated!
 -------------------------
 
-Things left to do:
-- Normalize syntax and style across the transcription files.
+### Feel free to make an issue when spotting any errors in the transcription.
+#### Things left to do:
+- Standardize syntax and style across the transcription files.
 
+-------------------------------------------------------------------------
 
 Useful Links
 ------------
-
--	[Official SICP (book) website](http://mitpress.mit.edu/sicp/)
--	[Official website for Sussman and Abelson's course](http://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/)
--	[These video lectures are also available at MIT OCW's website (notice the availability of transcripts)](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video-lectures/)
--	[Course notes from the 2005 lectures](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/lecture-notes/)
+- [Official SICP (book) website](http://mitpress.mit.edu/sicp/)
+- [Sussman and Abelson's lectures - Official website](http://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/)
+- [Video lectures hosted by MIT (notice transcripts of the classes are available)](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video-lectures/)
+- [Course notes from the 2005 lectures](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/lecture-notes/)
