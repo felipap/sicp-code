@@ -224,7 +224,7 @@ Easy to implement -- but....
 
 ;# SLIDE 0:55:00
 (define gevlist
-	(lambda (V[vars exp env)
+	(lambda (vars exp env)
 		(cond
 			((eq? exps '()) '())
 			((symbol? (car vars))	;applicative
