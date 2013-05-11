@@ -31,7 +31,7 @@ Every `SLIDE`, `TERMINAL` or `BOARD` content is presented, together with the tim
 
 * I have added comments and remarks throughout the code to help comprehension.
 * Though all files have extension .scm, their content represent a literal transcription of the slides, some of which isn't code. **They're expected to fail to compile in all Scheme interpreters.**
-* I have fixed the code on a few, rare occasions. In all of them I've noted the correction using a colon followed by an exclamation mark. Notice that ';!' was also used, one or twice, in the lecture slides.
+* I have fixed the code on a few, rare occasions. In all of them I've noted the correction using a colon followed by an exclamation mark. Notice that ';!' was also used, once or twice, in the lecture slides.
 
 #### A slide might have been ommited because
 -  it's clearly readable
