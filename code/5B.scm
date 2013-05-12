@@ -38,7 +38,7 @@ Implementing a Primitive
 (define (inverter in out)
 	(define (invert-in)
 		((let
-			((now (logical not (get-signal in))))
+			((now (logical-not (get-signal in))))
 			(after-delay inverter-delay
 				(lambda ()
 					(set-signal! out now))))))
@@ -46,8 +46,8 @@ Implementing a Primitive
 
 (define (logical-not s)
 	(cond
-		((- s 0) 1)
-		((- s 1) 0)
+		((= s 0) 1)
+		((= s 1) 0)
 		(else
 			(error "invalid signal" s))))
 ;# END SLIDE
