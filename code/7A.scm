@@ -45,7 +45,7 @@
 				((eq? (car proc) 'CLOSURE)					; Lambda expression
 					(eval	(cadadr proc) ; evaluate the body
 							(bind ; make new environment
-								(cadadr proc) ; parameter names
+								(caadr proc) ; parameter names
 								args ; parameter values
 								(caddr proc)))) ; environment
 				(else (error "..."))))	
@@ -152,7 +152,7 @@
 (eval 	'(((λ(x)(λ(y)(+ x y))) 3) 4)		<e0>)
 
 (apply 	(eval '((λ(x)  λ(y) (+ x y))) 3)	<e0>)
-		(evlist '(x) <e0>))
+		(evlist '(4) <e0>))
 
 (apply 	(eval '((λ(x) (λ(y) (+ x y))) 3)	<e0>)
 		(cons 	(eval 	'4 	<e0>)
