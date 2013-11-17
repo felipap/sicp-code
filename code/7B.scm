@@ -133,7 +133,8 @@ Easy to implement -- but....
 
 ;# SLIDE 0:35:30
 (define pgen
-	(λ (x) (expt x n)))
+    (λ (n)
+	(λ (x) (expt x n))))
 
 (define sum-powers
 	(λ (a b n)
