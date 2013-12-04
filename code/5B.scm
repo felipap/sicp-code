@@ -253,9 +253,9 @@ QUEUE
 (define (cdr x)
 	(x (lambda (a d sa sd) d)))
 
-(define (set-car! x)
+(define (set-car! x y)
 	(x (lambda (a d sa sd) (sa y)))
 
-(define (set-cdr! x)
+(define (set-cdr! x y)
 	(x (lambda (a d sa sd) (sd y))))
 ;# END SLIDE
