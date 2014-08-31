@@ -24,7 +24,7 @@ Primitives and Means of Combination
 Means of Abstraction
 (define (half adder a b s c)
 	(let
-		((d (make-wire)) (e (make-wire))
+		((d (make-wire)) (e (make-wire)))
 		(or-gate a b d)
 		(and-gate a b c)
 		(inverter c e)
