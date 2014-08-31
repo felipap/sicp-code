@@ -9,7 +9,7 @@ MIT lectures on **Structure and Interpretation of Computer Programs**, as taught
 
 ### This is a transcribed version of the full code featured in the lectures. ###
 
-This project is intended to make the code and content in the lectures manipulable and readable, **unlike the slide below**:
+This project's intent is to make the lectures' code and content readable (**unlike the slide below**) and available in digital format.
 
 ![Unreadable Slide](http://i.imgur.com/nin0M9n.png "This is nearly impossible to read")
 
