@@ -147,7 +147,7 @@
 	Constructing Primitive Pictures
 	from Lists of Segments
 
-(define (make picture seglist)
+(define (make-picture seglist)
 	(lambda (rect)
 		(for-each
 			(lambda (s)
@@ -161,7 +161,7 @@
 
 ;# BOARD 0:47:10
 (define R (make-rect .....))
-(define G (make-rect .....))
+(define G (make-pict .....))
 
 (G R)
 ;# END BOARD
