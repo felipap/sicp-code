@@ -95,7 +95,7 @@
 
 ;# SLIDE 0:26:15
 (define foo					; a*x*x + b*x + c
-	'(+	(* a (+ x x))
+	'(+	(* a (* x x))
 		(+ (* b x)
 			c)))
 
