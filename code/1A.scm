@@ -238,7 +238,7 @@ To find an approximation to √X
 (define (sqrt x)
 	(define (improve guess)
 		(average guess (/ x guess)))
-	(define (good-enough? guess x)
+	(define (good-enough? guess)
 		(< (abs (- (square guess) x))
 			.001))
 	(define (try guess)
