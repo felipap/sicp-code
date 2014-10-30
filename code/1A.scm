@@ -207,7 +207,7 @@ To find an approximation to √X
 		guess
 		(try (improve guess x) x)))
 
-(define (sqrt 1) (try 1 x))
+(define (sqrt x) (try 1 x))
 ;# END BOARD
 
 
