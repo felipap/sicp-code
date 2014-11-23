@@ -40,10 +40,8 @@ Every `SLIDE`, `TERMINAL` or `BOARD` content is presented, together with the tim
 
 -------------------------------------------------------------------------
 
-Help is much appreciated!
--------------------------
 
-### Feel free to create an issue whenever you spot any errors in the transcription.
+### Feel free to create an issue whenever you spot errors in the transcription.
 #### Things left to do:
 - Standardize syntax and style across the transcription files.
 
