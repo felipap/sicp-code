@@ -3,11 +3,11 @@
 
 -------------------------------------------------------------------------
 
-## Purpose and Motivation
+## Motivation
 
 MIT lectures on **Structure and Interpretation of Computer Programs**, as taught in 1986 by [Gerald Sussman](http://groups.csail.mit.edu/mac/users/gjs/) and [Harold Abelson](http://groups.csail.mit.edu/mac/users/hal/hal.html), are available online in [youtube](https://www.youtube.com/course?list=ECE18841CABEA24090) and [MIT OCW's website](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video-lectures/). The videos are available in 240p/360p: very poor quality for visualizing the code in the slides. In addition to that, the camera won't fixate on the board for long, making it extremely difficult to follow. 
 
-### This is a digitized version of the full code featured in the lectures. ###
+### This is a digitized version of the code featured in the lectures. ###
 
 This project's intent is to make the lectures' code and content readable (**unlike the slide below**) and available in digital format.
 
@@ -19,7 +19,7 @@ This project's intent is to make the lectures' code and content readable (**unli
 
 I tried to maintain consistency of notation, comments and indentation throughout the lectures. Much of the original indentation on the slides was maintained, except for when I was able to improve readability by changing it. Lecture breaks are also noted.
 
-Every `SLIDE`, `TERMINAL` or `BOARD` content is presented, together with the time appearance. E.g.
+Every `SLIDE`, `TERMINAL` or `BOARD` content is marked with the time of appearance. E.g.
 	
 	;# SLIDE 0:00:00
 	    ... slide content
