@@ -184,7 +184,7 @@ foo			- instantiates itself
 			(match
 				(cdr pat)
 				(cdr exp)
-				(match (car pat) (cdr exp) dict)
+				(match (car pat) (car exp) dict)
 			))
 	)
 )
