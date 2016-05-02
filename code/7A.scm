@@ -209,7 +209,7 @@
 	(λ (x n)
 		(cond 	((= n 0) 1)
 				(else
-					(* x (expt n (- n 1)))))))
+					(* x (expt x (- n 1)))))))
 ;# END BOARD
 
 
