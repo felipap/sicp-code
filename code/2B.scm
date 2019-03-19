@@ -9,7 +9,7 @@
 			(* (denom x) (numer y)))
 		(* (denom x) (denom y))))
 
-;# END BOAR
+;# END BOARD
 
 
 
@@ -75,7 +75,7 @@ For any x and y
 
 (define b (make-rat 1 4))
 
-(define ans (+ rat a b))
+(define ans (+rat a b))
 
 (numer ans) ⟶ 6
 (denom ans) ⟶ 8
@@ -87,7 +87,7 @@ For any x and y
 (define (make-rat n d)
 	(let
 		((g (gcd n d)))
-		(cons (/ n g) (/d g))))
+		(cons (/ n g) (/ d g))))
 ;# END SLIDE
 
 
