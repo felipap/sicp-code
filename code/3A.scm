@@ -74,7 +74,7 @@
 (define (scale-list s l)
 	(if (null? l)
 		nil
-		(cons (+ (car l) s)) (scale-list s (cdr l))))
+		(cons (* (car l) s)) (scale-list s (cdr l))))
 ;# END SLIDE
 
 
